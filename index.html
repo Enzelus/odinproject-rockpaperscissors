@@ -51,7 +51,7 @@
             return playerAnswer
         }
 
-        function playRound (playerSelection = askPlayer , computerSelection) {
+        function playRound (playerSelection = askPlayer() , computerSelection) {
 
             computerSelection = computerPlay() ;
 
@@ -60,62 +60,76 @@
 
             if (playerSelection === 'scissors' && computerSelection === 'paper') {
 
-                return "YOU WIN!"
+                console.log("YOU WIN!")
+
+                return 1
             }
 
             if (playerSelection === 'scissors' && computerSelection === 'rock') {
 
-                return "YOU LOST"
+                console.log("You lost")
+
+                return 0
             }
 
             if (playerSelection === 'rock' && computerSelection === 'scissors') {
 
-                return "YOU WIN!"
+                console.log("YOU WIN!")
+
+                return 1
             }
 
             if (playerSelection === 'rock' && computerSelection === 'paper') {
 
-                return "YOU LOST"
+                console.log("You lost")
+
+                return 0
             }
 
             if (playerSelection === 'paper' && computerSelection === 'rock') {
 
-                return "YOU WIN!"
-            }
+                console.log("YOU WIN!")
 
-            if (playerSelection === 'paper' && computerSelection === 'rock') {
-                return "YOU WIN!"
+                return 1
             }
 
             if (playerSelection === 'paper' && computerSelection === 'scissors') {
 
-                return "YOU LOST"
+                console.log("You lost")
+
+                return 0
             }
 
             if (playerSelection === computerSelection) {
 
-                return "It's a tie"
+                console.log("It's a tie")
+
+                return 0
             }
 
             else {
 
-                return "Please input either scissors, paper, or rock. Not case sensitive"
+                return "Please type either scissors, paper, or rock. Not case sensitive"
             }   
        
         }
 
 
-        // function game() {
 
-        //     for (let i = 0 ; i <= 5; i++) {
-        //         askPlayer()
-        //         playRound()
 
-        //     }
 
-        // }
+        function game() {
+        playRound()
+        playRound()
+        playRound()
+        playRound()
+        playRound()
+        }
 
-        // console.log(game())
+
+        console.log(game())
+
+    
 
     </script>
 
