@@ -4,173 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src= "javascript.js"></script>
-    <title>Document</title>
+    <script src= "javascript.js" defer></script>
+    <title>SCISSORS PAPER ROCK</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-
-    <script>
-
-//create a computer number randomizer that outputs either scissors, paper, or rock. Maybe through random + if statements?
 
 
-        function computerPlay () {
-
-            // creates a number from 1-3 representing scissors, paper or rock, output number, then if statements run
-        function computer () {
-
-            computer = Math.floor(Math.random() * 3) ;
-
-            return computer
-        }
-
-        computer()
-            
-            if (computer === 0) {
-                return "scissors"
-            }
-
-            if (computer === 1) {
-                return "paper"
-            }
-            if (computer === 2) {
-                return "rock"
-            }
-
-            else {
-                return "an error has occured"
-            }
-
-        }
-
-        let playerScore = 0;
-        let computerScore = 0;
-
-        function askPlayer () {
-
-            const playerAnswer = prompt("Scissors, Paper, or Rock?");
-
-            return playerAnswer
-        }
-
-        function playRound (playerSelection = askPlayer() , computerSelection) {
-
-            computerSelection = computerPlay() ;
+    <div class="playerWinLose">
+        <img src="./Icons-images/logocopy.png" alt="thing">
+        <h1 class="textWinAnnouncer"></h1>
+        <div class="playagain"><h1>PLAY AGAIN</h1></div>
+    </div>
 
 
-            playerSelection = playerSelection.toLowerCase();
-
-
-
-            if (playerSelection === 'scissors' && computerSelection === 'paper') {
-
-                console.log("YOU WIN!")
-
-                return 1
-            }
-
-            if (playerSelection === 'scissors' && computerSelection === 'rock') {
-
-                console.log("You lost")
-
-                return 0
-            }
-
-            if (playerSelection === 'rock' && computerSelection === 'scissors') {
-
-                console.log("YOU WIN!")
-
-                return 1
-            }
-            
-
-            if (playerSelection === 'rock' && computerSelection === 'paper') {
-
-                console.log("You lost")
-
-                return 0
-            }
-
-            if (playerSelection === 'paper' && computerSelection === 'rock') {
-
-                console.log("YOU WIN!")
-
-                return 1
-            }
-            
-
-            if (playerSelection === 'paper' && computerSelection === 'scissors') {
-
-                console.log("You lost")
-
-                return 0
-            }
-
-            if (playerSelection === computerSelection) {
-
-                console.log("It's a tie")
-
-            }
-
-            else {
-
-                return "RESTART GAME, BAD INPUT."
-            }   
-       
-        }
-
-
-
-
-
-        function game() {
-
-            let playerScore = 0;
-            let computerScore = 0;
-            
-        for (let i = 1; i <= 5; i++) {
-            
-            // if (playRound() === 1) {
-            //     playerScore += 1;
-            // }  
-
-            switch (playRound()) {
-                case 0: 
-                    computerScore += 1;
-                break;
-
-                case 1: 
-                    playerScore += 1;
-                break;
-
-            }
-        }
-
-                    function gameAnnounce() {
-
-            if (computerScore > playerScore) {
-                return "Player Lose"
-            }
-            if (computerScore < playerScore) {
-                return "Player Win"
-            }
-            if (computerScore === playerScore) {
-                return "GAME TIE"
-            }
-}
-
-        return gameAnnounce()
-    }
-
-
-
-        console.log(game())
 
     
+    <div class="body">
+        <div class="counter">
+            <div><h1 class="player">Player Score: 0</h1></div>
+            <div><h1 class="computer">Computer Score: 0</h1></div>
+        </div>
 
-    </script>
+        <div class="displayPlay">
+            <div class="playerPlay"></div>
+            <h1>VS.</h1>
+            <div class="computerPlay"></div>
+        </div>
 
+        <div class="logo">
+            <h1 class="announcer">SELECT AN OPTION</h1>
+        </div>
 
+        <div class="options">
+            <div class="rock"></div>
+            <div class="paper"></div>
+            <div class="scissors"></div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,115 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(34, 34, 34);
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.counter, .logo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.rock, .paper, .scissors {
+    min-width: 150px;
+    min-height: 150px;
+    border: solid 5px white;
+
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    box-sizing: border-box;
+}
+
+.playerPlay, .computerPlay {
+    border: solid white 3px;
+    background: url(./Icons-images/logocopy.png);
+    background-size:50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.displayPlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.displayPlay div {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.options :nth-child(1) {
+    background: url(./Icons-images/rock.svg);
+}
+.options :nth-child(2) {
+    background: url(./Icons-images/paper.svg);
+}
+.options :nth-child(3) {
+    background: url(./Icons-images/scissors.svg);
+}
+
+.playerlose, .playerwin {
+    color: white;
+}
+
+.playagain H1 {
+    user-select: none;
+}
+
+.playagain {
+    background: rgb(39, 39, 39);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid  white;
+    position: relative;
+    z-index: 100;
+}
+
+.playerWinLose {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    transition: all 200ms ease;
+}
