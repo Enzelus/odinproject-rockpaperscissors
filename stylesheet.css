@@ -111,5 +111,5 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    transition: all 200ms ease;
+    transition: all 1s ease;
 }
