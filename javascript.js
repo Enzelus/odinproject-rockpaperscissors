@@ -130,45 +130,45 @@ function playRound (playerSelection, computerSelection = computerPlay()) {
 
     if (playerSelection === 'scissors' && computerSelection === 'paper') {
         announcer.textContent = 'You win the round!';
-        playerPlay.style.background = 'url(./icons-images/scissors.svg)';
-        compPlay.style.background = 'url(./icons-images/paper.svg)';
+        playerPlay.style.background = 'url(./Icons-images/scissors.svg)';
+        compPlay.style.background = 'url(./Icons-images/paper.svg)';
 
         return 1
     }
 
     if (playerSelection === 'scissors' && computerSelection === 'rock') {
         announcer.textContent = 'You lost the round';
-        playerPlay.style.background = 'url(./icons-images/scissors.svg)';
-        compPlay.style.background = 'url(./icons-images/rock.svg)';
+        playerPlay.style.background = 'url(./Icons-images/scissors.svg)';
+        compPlay.style.background = 'url(./Icons-images/rock.svg)';
         return 0
     }
 
     if (playerSelection === 'rock' && computerSelection === 'scissors') {
         announcer.textContent = 'You win the round!';
-        compPlay.style.background = 'url(./icons-images/scissors.svg)';
-        playerPlay.style.background = 'url(./icons-images/rock.svg)';
+        compPlay.style.background = 'url(./Icons-images/scissors.svg)';
+        playerPlay.style.background = 'url(./Icons-images/rock.svg)';
         return 1
     }
     
 
     if (playerSelection === 'rock' && computerSelection === 'paper') {
         announcer.textContent = 'You lost the round';
-        playerPlay.style.background = 'url(./icons-images/rock.svg)';
-        compPlay.style.background = 'url(./icons-images/paper.svg)';
+        playerPlay.style.background = 'url(./Icons-images/rock.svg)';
+        compPlay.style.background = 'url(./Icons-images/paper.svg)';
         return 0
     }
 
     if (playerSelection === 'paper' && computerSelection === 'rock') {
         announcer.textContent = 'You win the round!';
-        compPlay.style.background = 'url(./icons-images/rock.svg)';
+        compPlay.style.background = 'url(./Icons-images/rock.svg)';
         return 1
     }
     
 
     if (playerSelection === 'paper' && computerSelection === 'scissors') {
         announcer.textContent = 'You lost the round the round';
-        playerPlay.style.background = 'url(./icons-images/paper.svg)';
-        compPlay.style.background = 'url(./icons-images/scissors.svg)';
+        playerPlay.style.background = 'url(./Icons-images/paper.svg)';
+        compPlay.style.background = 'url(./Icons-images/scissors.svg)';
         
         return 0
     }
@@ -176,24 +176,24 @@ function playRound (playerSelection, computerSelection = computerPlay()) {
     if (playerSelection === computerSelection) {
         announcer.textContent = "It's a tie!";
         switch(playerSelection) {
-            case "rock" : playerPlay.style.background = 'url(./icons-images/rock.svg)';
+            case "rock" : playerPlay.style.background = 'url(./Icons-images/rock.svg)';
             break
 
-            case "scissors" : playerPlay.style.background = 'url(./icons-images/scissors.svg)';
+            case "scissors" : playerPlay.style.background = 'url(./Icons-images/scissors.svg)';
             break
 
-            case "paper" : playerPlay.style.background = 'url(./icons-images/paper.svg)';
+            case "paper" : playerPlay.style.background = 'url(./Icons-images/paper.svg)';
             break
         }
 
         switch(computerSelection) {
-            case 'rock' : compPlay.style.background = 'url(./icons-images/rock.svg)';
+            case 'rock' : compPlay.style.background = 'url(./Icons-images/rock.svg)';
             break
 
-            case 'scissors' : compPlay.style.background = 'url(./icons-images/scissors.svg)';
+            case 'scissors' : compPlay.style.background = 'url(./Icons-images/scissors.svg)';
             break
 
-            case 'paper' : compPlay.style.background = 'url(./icons-images/paper.svg)';
+            case 'paper' : compPlay.style.background = 'url(./Icons-images/paper.svg)';
             break
         }
 
