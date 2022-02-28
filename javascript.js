@@ -160,6 +160,7 @@ function playRound (playerSelection, computerSelection = computerPlay()) {
 
     if (playerSelection === 'paper' && computerSelection === 'rock') {
         announcer.textContent = 'You win the round!';
+        playerPlay.style.background = 'url(./Icons-images/paper.svg)';
         compPlay.style.background = 'url(./Icons-images/rock.svg)';
         return 1
     }
