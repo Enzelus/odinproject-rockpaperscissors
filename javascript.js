@@ -95,7 +95,7 @@ function playPlayer() {
                 playerScore = 0;
                 playerCounter.textContent = `Player Score: ${playerScore}`;
                 computerCounter.textContent = `Computer Score: ${computerScore}`;
-                winText.textContent='You won the match, would you like to play again?';
+                winText.textContent='You won the match. Would you like to play again?';
                 winLosePage.style.opacity = '1';
                 winLosePage.style.zIndex = '1';
              }
@@ -105,7 +105,7 @@ function playPlayer() {
                 playerScore = 0;
                 playerCounter.textContent = `Player Score: ${playerScore}`;
                 computerCounter.textContent = `Computer Score: ${computerScore}`;
-                winText.textContent='You lost the match, would you like to play again?';
+                winText.textContent='You lost the match. Would you like to play again?';
                 winLosePage.style.opacity = '1';
                 winLosePage.style.zIndex = '1';
              }
